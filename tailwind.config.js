@@ -8,7 +8,11 @@ module.exports = {
       lg: '976px',
       xl: '1440px',
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'AboutBg': "url('/src/media/backlogo.jpg')"
+      }
+    },
   },
   plugins: [],
 };
