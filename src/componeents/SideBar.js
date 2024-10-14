@@ -10,7 +10,7 @@ const SideBar = () => {
   };
 
   return (
-    <div>
+    <div className=" absolute z-50">
       <div className="text-center">
         <button
           onClick={handleClick}

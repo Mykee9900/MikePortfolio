@@ -7,7 +7,7 @@ import SideBar from './componeents/SideBar';
 
 function App() {
   return (
-    <div className='bg-fuchsia-500'>
+    <div className='relative bg-fuchsia-500'>
       <SideBar />
       <About />
     </div>
