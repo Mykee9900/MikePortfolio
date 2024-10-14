@@ -3,12 +3,12 @@ import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faReact } from '@fortawesome/free-brands-svg-icons';
 import About from "./componeents/About";
-import SideBar from './componeents/SideBar';
+import Header from "./componeents/Header";
 
 function App() {
   return (
     <div className='relative bg-fuchsia-500'>
-      <SideBar />
+      <Header />
       <About />
     </div>
   );
