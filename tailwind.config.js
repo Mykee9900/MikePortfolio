@@ -11,6 +11,9 @@ module.exports = {
     extend: {
       backgroundImage: {
         'AboutBg': "url('/src/media/backlogo.jpg')"
+      },
+      fontFamily: {
+        'medium500Italic': ["Fira Sans", "sans-serif"]
       }
     },
   },
