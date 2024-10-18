@@ -9,15 +9,15 @@ const Home = () => {
             <p className="w-[400px] m-auto">My name is Mykee Flores, Founder of Web Creator. I am a Army veteran who found his path in Web Development. Explore my website to learn more about me and see my work. Reach me in the contact page for a project or more info.</p>
             <div >
                 <h3>Full Stack web applications</h3>
-                <div>
-                    <figure>
+                <div className="flex flex-row justify-around items-center w-full max-w-screen-lg mx-auto">
+                    <figure className="mx-[40px] my-9">
                         <h6>A movie website</h6>
-                        <video src={pyMovie} width={500} height={300} controls aria-label="Python movie website example" />
+                        <video className="rounded-[20px] border-blue-50 border-2 my-4" src={pyMovie} width={500} height={300} controls aria-label="Python movie website example" />
                         <figcaption>The website was created using Python, and the Django framework. It utilizes CRUD operations and makes API calls to the movie database website.</figcaption>
                     </figure>
-                    <figure>
+                    <figure className="mx-[40px] my-9">
                         <h6>A task manager website</h6>
-                        <video src={taskApp} width={500} height={300} controls aria-label="A Python web application example for managing task" />
+                        <video className="rounded-[20px] border-blue-50 border-2 my-4" src={taskApp} width={500} height={300} controls aria-label="A Python web application example for managing task" />
                         <figcaption>The website has basic CRUD operations and also allows users to effectively view and manage tasks. Python, JavaScript, and the Django framework were used building this web application.</figcaption>
                     </figure>
                 </div>
