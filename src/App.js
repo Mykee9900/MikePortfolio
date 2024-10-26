@@ -2,13 +2,15 @@ import logo from './logo.svg';
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faReact } from '@fortawesome/free-brands-svg-icons';
+import Header from "./components/Header";
+import Home from './components/Home';
 
 function App() {
   return (
-    <>
-      <h1 className='text-center text-3xl font-bold underline'>Hello tailwind</h1>
-      <FontAwesomeIcon icon={faReact} />
-    </>
+    <div className='relative bg-fuchsia-500'>
+      <Header />
+      <Home />
+    </div>
   );
 }
 
