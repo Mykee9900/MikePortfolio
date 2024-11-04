@@ -9,7 +9,6 @@ import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 const Home = () => {
     return (
         <div className="italic text-center font-medium500Italic mt-9">
-            <h3 className="text-4xl mb-5"><span className="border-b-2 border-black inline-block italic font-medium500Italic">Software Developer</span></h3>
             <div className="flex justify-center  w-full my-[100px]">
                 <div className="flex flex-col content-around items-center">
                     <h3 className="text-2xl text-blue-500 mb-4">Mykee Flores. I create great software, from creative ideas. </h3>
