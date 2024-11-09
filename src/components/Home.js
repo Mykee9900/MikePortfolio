@@ -29,7 +29,7 @@ const Home = () => {
                 </div>
             </div>            <div>
                 <h3 className="text-4xl border-b-2 border-black inline-block">Recent Projects</h3>
-                <div className="flex flex-row justify-around items-center w-full max-w-screen-lg mx-auto mt-6">
+                <div className="flex flex-row justify-around items-center w-full max-w-screen-lg mx-auto my-6">
                     <figure className="flex flex-col items-center mx-[40px] my-9 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer">
                         <h6 className="text-xl">A movie website</h6>
                         <video className="rounded-[20px] border-gray-600 border-8 my-4 w-[270px] h-[180px]" src={pyMovie} controls aria-label="Python movie website example" />
