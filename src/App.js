@@ -13,10 +13,9 @@ function App() {
       <div className='relative bg-fuchsia-500'>
         <Header />
         <Routes>
-          <Route path="" />
+          <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact/>} />
         </Routes>
-        <Home />
         <Footer />
       </div>
     </Router>

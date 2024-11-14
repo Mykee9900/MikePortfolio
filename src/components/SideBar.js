@@ -62,9 +62,14 @@ const SideBar = () => {
         </button>
         <div className="py-4 overflow-y-auto">
           <ul className="space-y-2 font-medium">
-            <li className="text-white hover:bg-gray-500 hover:p-2 transition ease-in-out duration-100">
+            <li className="text-black hover:bg-gray-500 hover:p-2 transition ease-in-out duration-100">
               <Link to="/contact">
                 <span><FontAwesomeIcon icon={faMessage}/> Message</span>
+              </Link>
+            </li>
+            <li className="text-black hover:bg-gray-500 hover:p-2 transition ease-in-out duration-100">
+              <Link to="/">
+                <span><FontAwesomeIcon icon={faMessage}/> Home</span>
               </Link>
             </li>
             {/* Add more navigation items here */}
