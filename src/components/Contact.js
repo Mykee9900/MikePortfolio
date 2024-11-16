@@ -9,13 +9,14 @@ const Contact = () => {
     return(
         <div className="flex flex-col items-center italic my-[100px] text-center">
             <h3 className="text-3xl pt-[50px]">Contact Me</h3>
-            <h6 className="my-[50px] text-center text-2xl w-[500px]">Any Questions? Or have a web application in mind? Send me a message and I will get back to you soon. I strive to provide the best service to my clients when it comes to web applications. Will be looking forward to hearing from you soon!</h6>
-            <div className="flex mt-[90px]">
+            <h6 className="mt-[40px] mb-[18px] text-center text-2xl w-[500px]">Any Questions? Or have a web application in mind? Send me a message and I will get back to you soon. I strive to provide the best service to my clients when it comes to web applications. I Will be looking forward to hearing from you soon!</h6>
+            <div className="flex justify-around mt-[90px] w-full">
                 <form className="grid gap-2 w-full max-w-xs">
-                    <input type="text" id="name" placeholder="Name" className="mb-2 h-9 p-2"/>
-                    <input type="text" id="email" placeholder="Email" className="mb-2 h-9 p-2"/>
-                    <input type="text" id="phoneN" placeholder="Phone Number" className="mb-2 h-9 p-2"/>
-                    <textarea rows={4} maxLength={50} placeholder="Message" id="msg" className="mb-2 p-2"/>
+                    <p className="w-[500px] mb-5">Use the form below to send me a message regarding services or Ideas. I will normally reply to all emails within 24 business hours. </p>
+                    <input type="text" id="name" placeholder="Name" className="mb-2 h-9 p-2" required/>
+                    <input type="text" id="email" placeholder="Email" className="mb-2 h-9 p-2" required/>
+                    <input type="text" id="phoneN" placeholder="Phone Number" className="mb-2 h-9 p-2" required/>
+                    <textarea rows={4} maxLength={150} placeholder="Message" id="msg" className="mb-2 p-2" required/>
                     <button type="submit" className="bg-blue-500 text-white p-1 w-[100px] ">Send</button>
                 </form>
                 <div>
