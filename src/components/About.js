@@ -1,16 +1,16 @@
 import React from "react";
+import aboutPhoto from "../media/aboutPhoto.jpg";
 
 const About = () => {
     return (
-        <div className="mt-[20px]">
-            <div className="bg-AboutBg bg-contain  top-[80px] z-1 h-[300px] w-full">
-                <h1 className="text-5xl text-center py-5 text-white">About Me</h1>
-                <p className="text-white pt-[50px] text-center">Hello world! My name is Mykee, and I am a full stack developer. After my years In the Army I pursued a career in IT, So I found my way in software development. Now I build web applications for the joy of it.</p>
-                <p>If you seek my skills connect with me to chat! </p>
-            </div>
-            <div>
-                <h3>Skills</h3>
-                <p>I have been programming for years and here are the skills I have attained.</p>
+        <div className="mt-[100px]">
+            <h1 className="pt-[50px] text-center text-[40px]">About Me</h1>
+            <div className="flex justify-around w-full my-[80px]">
+                <img className="h-[300px] border-2 border-gray-500 rounded-md " src={aboutPhoto} alt="Profile picture" />
+                <div>
+                    <h3>Hello! I'm Mykee.</h3>
+                    <p>I'm a Army veteran from El Paso</p>
+                </div>
             </div>
         </div>
     );
