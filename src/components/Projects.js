@@ -29,15 +29,18 @@ const Projects = () => {
                     </div>
                 </div>
                 <div>
-                    <h3 className="text-2xl">Full Stack Projects</h3>
+                    <h3 className="text-2xl mt-[100px]">Full Stack Projects</h3>
                     <div>
                         <figure>
+                            <video className="rounded=[20px] border-gray-600 border-8 my-4 w-[270px] h-[165px]" src={bookLab} controls aria-label="A project that has crud operations to view books"></video>
                             <figcaption>Book Lab</figcaption>
                         </figure>
                         <figure>
+                            <video className="rounded=[20px] border-gray-600 border-8 my-4 w-[270px] h-[165px]" src={movieMake} controls aria-label="A project that has crud operations to view and search movies"></video>
                             <figcaption>Movie Maker</figcaption>
                         </figure>
                         <figure>
+                            <video className="rounded=[20px] border-gray-600 border-8 my-4 w-[270px] h-[165px]" src={taskMan} controls aria-label="A project that allows user to add and remove tasks"></video>
                             <figcaption>Task Manager</figcaption>
                         </figure>
                     </div>
