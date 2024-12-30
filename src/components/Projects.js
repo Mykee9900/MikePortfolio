@@ -14,34 +14,40 @@ const Projects = () => {
                 <div>
                     <h3 className="text-2xl mt-[60px] text-center">Front End Projects</h3>
                     <div className="mt-6 flex justify-around w-full">
-                        <figure className="bg-opacity-20 bg-cyan-500 p-4 m-4 rounded-[20px]">
-                            <video className="rounded-[20px] border-gray-600 border-8 my-4 w-[270px] h-[158px]" src={affirmGen} controls aria-label="A project that generates affirmations"></video>
+                        <figure className="bg-opacity-20 bg-cyan-200 p-4 m-4 rounded-[20px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer">
+                            <h6 className="text-xl text-center">Affirmation Generator</h6>
+                            <video className="rounded-[20px] border-gray-600 border-8 my-4 w-[270px] h-[150px]" src={affirmGen} controls aria-label="A project that generates affirmations"></video>
                             <figcaption className="text-center">Affirmation Generator</figcaption>
                         </figure>
-                        <figure className="bg-opacity-20 bg-cyan-500 p-4 m-4 rounded-[20px]">
-                            <video className="rounded=[20px] border-gray-600 border-8 my-4 w-[270px] h-[165px]" src={calculator} controls aria-label="A project that is a calculator"></video>
+                        <figure className="bg-opacity-20 bg-cyan-200 p-4 m-4 rounded-[20px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer">
+                        <h6 className="text-xl text-center">Calculator</h6>
+                            <video className="rounded-[20px] border-gray-600 border-8 my-4 w-[270px] h-[165px]" src={calculator} controls aria-label="A project that is a calculator"></video>
                             <figcaption className="text-center">Calculator</figcaption>
                         </figure>
-                        <figure className="bg-opacity-20 bg-cyan-500 p-4 m-4 rounded-[20px]">
-                            <video className="rounded=[20px] border-gray-600 border-8 my-4 w-[270px] h-[161px]" src={toDo} controls aria-label="A project that is used as a ToDo List"></video>
+                        <figure className="bg-opacity-20 bg-cyan-200 p-4 m-4 rounded-[20px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer">
+                            <h6 className="text-xl text-center">ToDo List</h6>
+                            <video className="rounded-[20px] border-gray-600 border-8 my-4 w-[270px] h-[161px]" src={toDo} controls aria-label="A project that is used as a ToDo List"></video>
                             <figcaption className="text-center">ToDo List</figcaption>
                         </figure>
                     </div>
                 </div>
-                <div>
-                    <h3 className="text-2xl mt-[100px]">Full Stack Projects</h3>
-                    <div>
-                        <figure>
-                            <video className="rounded=[20px] border-gray-600 border-8 my-4 w-[270px] h-[165px]" src={bookLab} controls aria-label="A project that has crud operations to view books"></video>
-                            <figcaption>Book Lab</figcaption>
+                <div className="mb-9">
+                    <h3 className="text-2xl mt-[100px] text-center">Full Stack Projects</h3>
+                    <div className="flex justify-around mt-6">
+                        <figure className="bg-opacity-20 bg-cyan-200 p-4 m-4 rounded-[20px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer">
+                        <h6 className="text-xl text-center">Book Lab</h6>
+                            <video className="rounded-[20px] border-gray-600 border-8 my-4 w-[270px] h-[160px]" src={bookLab} controls aria-label="A project that has crud operations to view books"></video>
+                            <figcaption className="text-center">Book Lab</figcaption>
+                        </figure >
+                        <figure className="bg-opacity-20 bg-cyan-200 p-4 m-4 rounded-[20px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer">
+                        <h6 className="text-xl text-center">Movie Maker</h6>
+                            <video className="rounded-[20px] border-gray-600 border-8 my-4 w-[248px] h-[165px]" src={movieMake} controls aria-label="A project that has crud operations to view and search movies"></video>
+                            <figcaption className="text-center">Movie Maker</figcaption>
                         </figure>
-                        <figure>
-                            <video className="rounded=[20px] border-gray-600 border-8 my-4 w-[270px] h-[165px]" src={movieMake} controls aria-label="A project that has crud operations to view and search movies"></video>
-                            <figcaption>Movie Maker</figcaption>
-                        </figure>
-                        <figure>
-                            <video className="rounded=[20px] border-gray-600 border-8 my-4 w-[270px] h-[165px]" src={taskMan} controls aria-label="A project that allows user to add and remove tasks"></video>
-                            <figcaption>Task Manager</figcaption>
+                        <figure className="bg-opacity-20 bg-cyan-200 p-4 m-4 rounded-[20px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer">
+                        <h6 className="text-xl text-center">Task Manager</h6>
+                            <video className="rounded-[20px] border-gray-600 border-8 my-4 w-[2498x] h-[165px]" src={taskMan} controls aria-label="A project that allows user to add and remove tasks"></video>
+                            <figcaption className="text-center">Task Manager</figcaption>
                         </figure>
                     </div>
                 </div>
