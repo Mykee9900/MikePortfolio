@@ -17,17 +17,17 @@ const Projects = () => {
                         <figure className="bg-opacity-20 bg-cyan-200 p-4 m-4 rounded-[20px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer">
                             <h6 className="text-xl text-center">Affirmation Generator</h6>
                             <video className="rounded-[20px] border-gray-600 border-8 my-4 w-[270px] h-[150px]" src={affirmGen} controls aria-label="A project that generates affirmations"></video>
-                            <figcaption className="text-center">Affirmation Generator</figcaption>
+                            <figcaption className="text-center w-[270px]">An interactive website built using HTML, CSS, and JavaScript to generate personalized affirmations instantly.”</figcaption>
                         </figure>
                         <figure className="bg-opacity-20 bg-cyan-200 p-4 m-4 rounded-[20px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer">
                         <h6 className="text-xl text-center">Calculator</h6>
                             <video className="rounded-[20px] border-gray-600 border-8 my-4 w-[270px] h-[165px]" src={calculator} controls aria-label="A project that is a calculator"></video>
-                            <figcaption className="text-center">Calculator</figcaption>
+                            <figcaption className="text-center w-[270px]">A functional calculator website designed and developed using HTML, CSS, and JavaScript, providing users with an intuitive interface for performing basic arithmetic operations.</figcaption>
                         </figure>
                         <figure className="bg-opacity-20 bg-cyan-200 p-4 m-4 rounded-[20px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer">
                             <h6 className="text-xl text-center">ToDo List</h6>
                             <video className="rounded-[20px] border-gray-600 border-8 my-4 w-[270px] h-[161px]" src={toDo} controls aria-label="A project that is used as a ToDo List"></video>
-                            <figcaption className="text-center">ToDo List</figcaption>
+                            <figcaption className="text-center w-[270px]">A dynamic and visually appealing To-Do List website built using the React front-end framework and styled with CSS, offering seamless task management and an intuitive user experience.</figcaption>
                         </figure>
                     </div>
                 </div>
@@ -37,7 +37,7 @@ const Projects = () => {
                         <figure className="bg-opacity-20 bg-cyan-200 p-4 m-4 rounded-[20px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer">
                         <h6 className="text-xl text-center">Book Lab</h6>
                             <video className="rounded-[20px] border-gray-600 border-8 my-4 w-[270px] h-[160px]" src={bookLab} controls aria-label="A project that has crud operations to view books"></video>
-                            <figcaption className="text-center">Book Lab</figcaption>
+                            <figcaption className="text-center">A website that uses CRUD operations and allows users to view books stored in website database. It was built using Python Django Framework, SQL Lite database and HTML, CSS, and Javascript.</figcaption>
                         </figure >
                         <figure className="bg-opacity-20 bg-cyan-200 p-4 m-4 rounded-[20px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer">
                         <h6 className="text-xl text-center">Movie Maker</h6>
