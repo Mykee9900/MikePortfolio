@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouseChimney } from "@fortawesome/free-solid-svg-icons";
 import { faMessage } from "@fortawesome/free-regular-svg-icons";
-import { faInfo } from "@fortawesome/free-solid-svg-icons"; 
+import { faInfo } from "@fortawesome/free-solid-svg-icons";
+import { faCode } from "@fortawesome/free-solid-svg-icons"; 
 
 //Displays the side naviagtion menu
 const SideBar = () => {
@@ -79,7 +80,11 @@ const SideBar = () => {
               <span><FontAwesomeIcon icon={faInfo}/> About Me</span>
               </Link>
             </li>
-            {/* Add more navigation items here */}
+            <li className="text-black hover:bg-gray-500 hover:p-2 transition ease-in-out duration-100">
+              <Link to="/projects">
+              <span><FontAwesomeIcon icon={faCode}/>Projects</span>
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
