@@ -85,6 +85,11 @@ const SideBar = () => {
               <span><FontAwesomeIcon icon={faCode}/>Projects</span>
               </Link>
             </li>
+            <li className="text-black hover:bg-gray-500 hover:p-2 transition ease-in-out duration-100">
+              <Link to="/services">
+              <span>Services</span>
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
