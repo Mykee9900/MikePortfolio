@@ -37,17 +37,17 @@ const Projects = () => {
                         <figure className="bg-opacity-20 bg-cyan-200 p-4 m-4 rounded-[20px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer">
                         <h6 className="text-xl text-center">Book Lab</h6>
                             <video className="rounded-[20px] border-gray-600 border-8 my-4 w-[270px] h-[160px]" src={bookLab} controls aria-label="A project that has crud operations to view books"></video>
-                            <figcaption className="text-center">A website that uses CRUD operations and allows users to view books stored in website database. It was built using Python Django Framework, SQL Lite database and HTML, CSS, and Javascript.</figcaption>
+                            <figcaption className="text-center w-[270px]">A website that uses CRUD operations and allows users to view books stored in website database. It was built using Python Django Framework, SQL Lite database and HTML, CSS, and Javascript.</figcaption>
                         </figure >
                         <figure className="bg-opacity-20 bg-cyan-200 p-4 m-4 rounded-[20px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer">
                         <h6 className="text-xl text-center">Movie Maker</h6>
                             <video className="rounded-[20px] border-gray-600 border-8 my-4 w-[248px] h-[165px]" src={movieMake} controls aria-label="A project that has crud operations to view and search movies"></video>
-                            <figcaption className="text-center">Movie Maker</figcaption>
+                            <figcaption className="text-center w-[248px]">A movie-centric website with CRUD functionality, enabling users to explore movies, watch trailers, like, and save favorites to their profiles. Built with Python, Django, JavaScript, and SQLite.</figcaption>
                         </figure>
                         <figure className="bg-opacity-20 bg-cyan-200 p-4 m-4 rounded-[20px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer">
                         <h6 className="text-xl text-center">Task Manager</h6>
-                            <video className="rounded-[20px] border-gray-600 border-8 my-4 w-[2498x] h-[165px]" src={taskMan} controls aria-label="A project that allows user to add and remove tasks"></video>
-                            <figcaption className="text-center">Task Manager</figcaption>
+                            <video className="rounded-[20px] border-gray-600 border-8 my-4 w-[249px] h-[165px]" src={taskMan} controls aria-label="A project that allows user to add and remove tasks"></video>
+                            <figcaption className="text-center w-[249px]">A task manager website with CRUD functionality, letting users add, manage, like, and remove tasks from their profiles. Built with Python, Django, JavaScript, and SQLite.</figcaption>
                         </figure>
                     </div>
                 </div>
