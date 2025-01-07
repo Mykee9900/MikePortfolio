@@ -4,7 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouseChimney } from "@fortawesome/free-solid-svg-icons";
 import { faMessage } from "@fortawesome/free-regular-svg-icons";
 import { faInfo } from "@fortawesome/free-solid-svg-icons";
-import { faCode } from "@fortawesome/free-solid-svg-icons"; 
+import { faCode } from "@fortawesome/free-solid-svg-icons";
+import { faToolbox } from "@fortawesome/free-solid-svg-icons";
+
 
 //Displays the side naviagtion menu
 const SideBar = () => {
@@ -87,7 +89,7 @@ const SideBar = () => {
             </li>
             <li className="text-black hover:bg-gray-500 hover:p-2 transition ease-in-out duration-100">
               <Link to="/services">
-              <span>Services</span>
+              <span><FontAwesomeIcon icon={faToolbox}/>Services</span>
               </Link>
             </li>
           </ul>
