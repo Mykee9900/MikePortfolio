@@ -22,7 +22,7 @@ const SideBar = () => {
       <div className="text-center">
         <button
           onClick={handleClick}
-          className=" h-[50px] ml-4 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+          className=" h-[50px] ml-4 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 dark:text-black"
           type="button"
           aria-controls="drawer-navigation"
         >
@@ -32,7 +32,7 @@ const SideBar = () => {
 
       <div
         id="drawer-navigation"
-        className={`fixed top-0 left-0 z-40 w-64 h-screen p-4 overflow-y-auto transition-transform bg-white dark:bg-gray-800 ${
+        className={`fixed top-0 left-0 z-40 w-64 h-screen p-4 overflow-y-auto transition-transform bg-white dark:bg-blue-800 ${
           isVisible ? "translate-x-0" : "-translate-x-full"
         }`}
         tabIndex="-1"
@@ -40,7 +40,7 @@ const SideBar = () => {
       >
         <h5
           id="drawer-navigation-label"
-          className="text-base font-semibold text-gray-500 uppercase dark:text-gray-400"
+          className="text-base font-semibold text-gray-500 uppercase dark:text-black"
         >
           Menu
         </h5>
@@ -67,29 +67,29 @@ const SideBar = () => {
         </button>
         <div className="py-4 overflow-y-auto">
           <ul className="space-y-2 font-medium">
-            <li className="text-black hover:bg-gray-500 hover:p-2 transition ease-in-out duration-100">
+            <li className="text-black hover:bg-gray-500 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-90 hover:p-[5px] duration-300">
               <Link to="/">
                 <span><FontAwesomeIcon icon={faHouseChimney}/> Home</span>
               </Link>
             </li>
-            <li className="text-black hover:bg-gray-500 hover:p-2 transition ease-in-out duration-100">
+            <li className="text-black hover:bg-gray-500 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-90 hover:p-[5px] duration-300">
               <Link to="/contact">
                 <span><FontAwesomeIcon icon={faMessage}/> Contact Me</span>
               </Link>
             </li>
-            <li className="text-black hover:bg-gray-500 hover:p-2 transition ease-in-out duration-100">
+            <li className="text-black hover:bg-gray-500 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-90 hover:p-[5px] duration-300">
               <Link to="/about">
               <span><FontAwesomeIcon icon={faInfo}/> About Me</span>
               </Link>
             </li>
-            <li className="text-black hover:bg-gray-500 hover:p-2 transition ease-in-out duration-100">
+            <li className="text-black hover:bg-gray-500 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-90 hover:p-[5px] duration-300">
               <Link to="/projects">
-              <span><FontAwesomeIcon icon={faCode}/>Projects</span>
+              <span><FontAwesomeIcon icon={faCode}/> Projects</span>
               </Link>
             </li>
-            <li className="text-black hover:bg-gray-500 hover:p-2 transition ease-in-out duration-100">
+            <li className="text-black hover:bg-gray-500 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-90 hover:p-[5px] duration-300">
               <Link to="/services">
-              <span><FontAwesomeIcon icon={faToolbox}/>Services</span>
+              <span><FontAwesomeIcon icon={faToolbox}/> Services</span>
               </Link>
             </li>
           </ul>

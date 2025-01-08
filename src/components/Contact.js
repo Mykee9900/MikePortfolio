@@ -13,11 +13,11 @@ const Contact = () => {
             <div className="flex justify-around mt-[90px] w-full">
                 <form className="grid gap-2 w-full max-w-xs">
                     <p className="w-[500px] mb-5">Use the form below to send me a message regarding services or Ideas. I will normally reply to all emails within 24 business hours. </p>
-                    <input type="text" id="name" placeholder="Name" className="mb-2 h-9 p-2" required/>
-                    <input type="text" id="email" placeholder="Email" className="mb-2 h-9 p-2" required/>
-                    <input type="text" id="phoneN" placeholder="Phone Number" className="mb-2 h-9 p-2" required/>
-                    <textarea rows={4} maxLength={150} placeholder="Message" id="msg" className="mb-2 p-2" required/>
-                    <button type="submit" className="bg-blue-500 text-white p-1 w-[100px] ">Send</button>
+                    <input type="text" id="name" placeholder="Name" className="mb-2 h-9 p-2 dark:bg-gray-500 dark:text-black" required/>
+                    <input type="text" id="email" placeholder="Email" className="mb-2 h-9 p-2 dark:bg-gray-500 dark:text-black" required/>
+                    <input type="text" id="phoneN" placeholder="Phone Number" className="mb-2 h-9 p-2  dark:bg-gray-500 dark:text-black" required/>
+                    <textarea rows={4} maxLength={150} placeholder="Message" id="msg" className="mb-2 p-2  dark:bg-gray-500 dark:text-black" required/>
+                    <button type="submit" className="bg-blue-500 text-white p-1 w-[100px] dark:text-black">Send</button>
                 </form>
                 <div>
                     <h6 className="text-[25px] mb-8">You can also reach me here</h6>
