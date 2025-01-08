@@ -14,11 +14,11 @@ const Services = () => {
     return(
         <div className="mt-[100px]">
             <h1 className="pt-[50px] text-center text-[40px]">Services and Skills</h1>
-            <div className="flex justify-around align-middle mt-[100px] mb-[100px]">
+            <div className="flex justify-around align-middle mt-[100px] mb-[150px]">
                 <div className="w-[500px]">
                     <h3 className="text-[30px] mb-[20px]">Services</h3>
-                    <p>I deliver high-quality, functional products quickly and efficiently, ensuring both you and your users are delighted. My services include:</p>
-                    <ul className="mt-[20px] ml-[50px]">
+                    <p className="text-[20px]">I deliver high-quality, functional products quickly and efficiently, ensuring both you and your users are delighted. My services include:</p>
+                    <ul className="mt-[20px] ml-[50px] text-[20px]">
                         <li className="font-bold list-disc">Product Design</li>
                         <li className="font-bold list-disc">Web and Mobile Application Development</li>
                         <li className="font-bold list-disc">Front-End Development</li>
@@ -28,8 +28,8 @@ const Services = () => {
                 </div>
                 <div className="w-[500px] h-[300px]">
                     <h3 className="text-[30px] mb-[20px]">Skills</h3>
-                    <p>I have a wide variety of programming skills that allows me to build products that suit your needs. The programming tools I know are:</p>
-                    <ul className="flex justify-around mt-[30px]">
+                    <p className="text-[20px]">I have a wide variety of programming skills that allows me to build products that suit your needs. The programming tools I know are:</p>
+                    <ul className="flex justify-around mt-[30px] text-[20px]">
                         <ul className="font-bold">Languages:
                             <li><FontAwesomeIcon icon={faJs} beat style={{color: "#74C0FC",}} /> JavaScript</li>
                             <li><FontAwesomeIcon icon={faCss3} beat style={{color: "#74C0FC"}} /> CSS</li>
@@ -51,6 +51,7 @@ const Services = () => {
                     </ul>
                 </div>
             </div>
+            <h3 className="text-center text-[30px] m-[112px]">Contact me for prices on any service listed above.</h3>
         </div>
     )
 }
