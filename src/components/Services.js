@@ -1,41 +1,52 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faJs } from "@fortawesome/free-brands-svg-icons";
+import { faCss3 } from "@fortawesome/free-brands-svg-icons/faCss3";
+import { faPython } from "@fortawesome/free-brands-svg-icons/faPython";
+import { faJava } from "@fortawesome/free-brands-svg-icons/faJava";
+import { faDatabase } from "@fortawesome/free-solid-svg-icons/faDatabase";
+import { faServer } from "@fortawesome/free-solid-svg-icons/faServer";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
+import { faReact } from "@fortawesome/free-brands-svg-icons";
+import { faBootstrap } from "@fortawesome/free-brands-svg-icons";
 
 const Services = () => {
     return(
         <div className="mt-[100px]">
             <h1 className="pt-[50px] text-center text-[40px]">Services and Skills</h1>
-            <div className="flex justify-around align-middle mt-[100px] ">
-                <div>
-                    <h3>Services</h3>
-                    <p>I can deliver products that you will love in fast, better and functional that your users will love. My services include:</p>
-                    <ul>
-                        <li>Product Design</li>
-                        <li>Web and Mobile App development</li>
-                        <li>Front-end Development</li>
-                        <li>Back-end Development</li>
-                        <li>Fullstack Development</li>
+            <div className="flex justify-around align-middle mt-[100px] mb-[100px]">
+                <div className="w-[500px]">
+                    <h3 className="text-[30px] mb-[20px]">Services</h3>
+                    <p>I deliver high-quality, functional products quickly and efficiently, ensuring both you and your users are delighted. My services include:</p>
+                    <ul className="mt-[20px] ml-[50px]">
+                        <li className="font-bold list-disc">Product Design</li>
+                        <li className="font-bold list-disc">Web and Mobile Application Development</li>
+                        <li className="font-bold list-disc">Front-End Development</li>
+                        <li className="font-bold list-disc">Back-End Development</li>
+                        <li className="font-bold list-disc">Full-Stack Development</li>
                     </ul>
                 </div>
-                <div>
-                    <h3>Skills</h3>
+                <div className="w-[500px] h-[300px]">
+                    <h3 className="text-[30px] mb-[20px]">Skills</h3>
                     <p>I have a wide variety of programming skills that allows me to build products that suit your needs. The programming tools I know are:</p>
-                    <ul>
-                        <ul>Languages
-                            <li>JavaScript</li>
-                            <li>CSS</li>
-                            <li>Python</li>
-                            <li>C#</li>
+                    <ul className="flex justify-around mt-[30px]">
+                        <ul className="font-bold">Languages:
+                            <li><FontAwesomeIcon icon={faJs} beat style={{color: "#74C0FC",}} /> JavaScript</li>
+                            <li><FontAwesomeIcon icon={faCss3} beat style={{color: "#74C0FC"}} /> CSS</li>
+                            <li><FontAwesomeIcon icon={faPython} beat style={{color: "#74C0FC",}} /> Python</li>
+                            <li><FontAwesomeIcon icon={faJava} beat style={{color: "#74C0FC",}} /> Java</li>
+                            <li><FontAwesomeIcon icon={faCode} beat style={{color: "#74C0FC",}} /> C#</li>
                         </ul>
-                        <ul>Databases
-                            <li>SQLLite</li>
-                            <li>MySQL</li>
+                        <ul className="font-bold">Databases:
+                            <li><FontAwesomeIcon icon={faDatabase} beat style={{color: "#74C0FC",}} /> SQLite</li>
+                            <li><FontAwesomeIcon icon={faServer} beat style={{color: "#74C0FC",}} /> MySQL</li>
                         </ul>
-                        <ul>Frameworks
-                            <li>Django</li>
-                            <li>.NET</li>
-                            <li>React</li>
-                            <li>Bootstrap</li>
-                            <li>Tailwind</li>
+                        <ul className="font-bold">Frameworks:
+                            <li><FontAwesomeIcon icon={faPython} beat style={{color: "#74C0FC",}} /> Django</li>
+                            <li><FontAwesomeIcon icon={faCode} beat style={{color: "#74C0FC",}} /> .NET</li>
+                            <li><FontAwesomeIcon icon={faReact} beat style={{color: "#74C0FC",}} /> React</li>
+                            <li><FontAwesomeIcon icon={faBootstrap} beat style={{color: "#74C0FC",}} /> Bootstrap</li>
+                            <li><FontAwesomeIcon icon={faCode} beat style={{color: "#74C0FC",}} /> Tailwind</li>
                         </ul>
                     </ul>
                 </div>
