@@ -3,12 +3,16 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5001;
 
 const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(cors());
+// app.use(cors({
+//     origin: 'http://localhost:3000',
+//     methods: ['POST', 'GET'],
+// }));
+app.use(cors()); // Allow all origins for testing
 app.use(express.json());
 
 // Serve React static files
