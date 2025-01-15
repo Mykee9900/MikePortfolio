@@ -12,7 +12,7 @@ const About = () => {
                     <p>I am an Army veteran from El Paso who became a software developer.</p>
                     <p>As a child, I always had an imaginative mind and enjoyed using my creativity with computers. While experimenting with computers, I discovered my passion for IT.</p>
                     <p>After completing my journey in the Army, I began searching for my ideal career. Reflecting on my past, I wondered why I had never pursued a career in IT. That realization led me to explore various jobs, and eventually, I discovered coding. Since then, it has been the best decision I’ve ever made. Now, I am ready to help others turn their creative ideas into reality. Reach out to me below, and let’s start a project together!</p>
-                    <button className="p-2 mt-6 border-4 border-black bg-gray-500 transition ease-in-out duration-100 hover:translate-y-1 hover:scale-110 cursor-pointer">Resume</button>
+                    <button className="p-2 mt-6 border-4 border-black bg-gray-500 transition ease-in-out duration-100 hover:translate-y-1 hover:scale-110 cursor-pointer"><a href="/efResume.pdf" target="_blank">Resume</a></button>
                 </div>
             </div>
         </div>

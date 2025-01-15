@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
@@ -20,7 +21,7 @@ app.post('/contact', async (req, res) => {
         service: 'gmail',
         auth: {
             user: process.env.EMAIL_USER,
-            pass: process.env.EMAL_PASS,
+            pass: process.env.EMAIL_PASS,
         },
     });
 
