@@ -79,17 +79,17 @@ const SideBar = () => {
             </li>
             <li className="text-black hover:bg-gray-500 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-90 hover:p-[5px] duration-300">
               <Link to="/about">
-              <span><FontAwesomeIcon icon={faInfo}/> About Me</span>
+                <span><FontAwesomeIcon icon={faInfo}/> About Me</span>
               </Link>
             </li>
             <li className="text-black hover:bg-gray-500 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-90 hover:p-[5px] duration-300">
               <Link to="/projects">
-              <span><FontAwesomeIcon icon={faCode}/> Projects</span>
+                <span><FontAwesomeIcon icon={faCode}/> Projects</span>
               </Link>
             </li>
             <li className="text-black hover:bg-gray-500 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-90 hover:p-[5px] duration-300">
               <Link to="/services">
-              <span><FontAwesomeIcon icon={faToolbox}/> Services</span>
+                <span><FontAwesomeIcon icon={faToolbox}/> Services</span>
               </Link>
             </li>
           </ul>

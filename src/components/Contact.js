@@ -13,29 +13,62 @@ const Contact = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         console.log("In the function");
-        try {
-            console.log("trying to send message");
-            const response = await fetch('/contact', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ name, email, phone, msg }),
-            });
-            if(response.ok){
-                console.log("sucess")
-                alert("Message sent!");
-                setName('');
-                setEmail('');
-                setPhone('');
-                setMsg('');
-            } else {
-                alert("Failed to send!");
-                console.log("failed");
+        if(dataValidator()){
+            try {
+                console.log("trying to send message");
+                const response = await fetch('/contact', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ name, email, phone, msg }),
+                });
+                if(response.ok){
+                    console.log("success")
+                    alert("Message sent!");
+                    setName('');
+                    setEmail('');
+                    setPhone('');
+                    setMsg('');
+                } else {
+                    alert("Failed to send!");
+                    console.log("failed");
+                }
+            } catch(error){
+                console.log('Error:', error);
+                alert("An error occured, please try again.");
             }
-        } catch(error){
-            console.log('Error:', error);
-            alert("An error occured, please try again.");
+        }  else {
+            alert("Please input correct data in the form.");
         }
     };
+
+    const dataValidator = () => {
+        //Variables are used to check for malicious characters
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const scriptRegex = /<\s*script.*?>.*?<\s*\/\s*script\s*>/gi;
+        const invalidChars = /[<>{}]/g; 
+
+        if(name.length > 20 || name.length < 2 || invalidChars.test(name) || scriptRegex.test(name)){
+            alert("Name must be greater than 2 or less than 20 characters, and only contain characters.");
+            console.log("error");
+            return false;
+        }
+        if(!emailRegex.test(email) || invalidChars.test(email) || scriptRegex.test(email)){
+            alert("Please enter a valid email address.");
+            console.log("error");
+            return false;
+        }
+        if(phone.length !==10 || !/^\d+$/.test(phone)){
+            alert("Phone number must be 10 digits.")
+            console.log("error");
+            return false;
+        }
+        if(msg.length > 150 || msg.length < 2 || scriptRegex.test(msg) || invalidChars.test(msg)){
+            alert("Message must be greater than 2 characters or less than 150 characters, and only contain characters or numbers.");
+            console.log("error");
+            return false;
+        }
+        return true;
+    }
 
     return(
         <div className="flex flex-col items-center italic mt-[94px] mb-[50px] text-center">
@@ -60,7 +93,7 @@ const Contact = () => {
                         <FontAwesomeIcon icon={faInstagram} className="mr-2" />
                         Instagram
                     </a>
-                    <a href="mailto:mykee5511@gmail.com" className="flex items-center text-xl text-blue-700 hover:text-blue-900 mx-[20px] transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300 my-3" target="_blank">
+                    <a href={`mailto:${process.env.REACT_APP_EMAIL_USER}`} className="flex items-center text-xl text-blue-700 hover:text-blue-900 mx-[20px] transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300 my-3" target="_blank">
                         <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
                         Email
                     </a>

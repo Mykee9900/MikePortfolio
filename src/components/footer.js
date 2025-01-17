@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { NavLink } from "react-router-dom";
 
 const Footer = () => {
 
@@ -12,7 +11,6 @@ const Footer = () => {
                     Contact Me
                 </Link>
             </span>
-            {/* <a target="_blank" href="" className="transition ease-in-out delay-150 hover:bg-blue-500 hover:-translate-y-1 p-1 hover:scale-110 duration-500">Contact</a> */}
         </div>
     )
 }

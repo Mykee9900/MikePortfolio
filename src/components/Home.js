@@ -7,7 +7,6 @@ import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 const Home = () => {
-    console.log(process.env.EMAIL_USER);
     return (
         <div className="italic text-center font-medium500Italic mt-9">
             <div className="flex flex-col justify-center items-center w-full my-[100px]">
@@ -22,13 +21,14 @@ const Home = () => {
                         <a href="https://www.instagram.com/kikes9900/profilecard/?igsh=MWJpdmZhdG4zdDczMw%3D%3D" className="flex items-center text-xl text-blue-700 hover:text-blue-900 mx-[20px] transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300" target="_blank">
                             <FontAwesomeIcon icon={faInstagram} className="mr-2" />
                             Instagram</a>
-                        <a href={`mailto:${process.env.EMAIL_USER}`} className="flex items-center text-xl text-blue-700 hover:text-blue-900 mx-[20px] transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300" target="_blank">
+                        <a href={`mailto:${process.env.REACT_APP_EMAIL_USER}`} className="flex items-center text-xl text-blue-700 hover:text-blue-900 mx-[20px] transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300" target="_blank">
                             <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
                             Email
                         </a>
                     </div>
                 </div>
-            </div>            <div>
+            </div>
+            <div>
                 <h3 className="text-4xl border-b-2 border-black inline-block">Recent Projects</h3>
                 <div className="flex flex-row justify-around items-center w-full max-w-screen-lg mx-auto my-6">
                     <figure className="flex flex-col items-center mx-[40px] my-9 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer bg-opacity-20 bg-cyan-200 p-4 rounded-[20px]">
