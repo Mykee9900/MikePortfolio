@@ -13,7 +13,7 @@ const Projects = () => {
             <div className="flex flex-col justify-around items-center">
                 <div>
                     <h3 className="text-2xl mt-[60px] text-center">Front End Projects</h3>
-                    <div className="mt-6 flex justify-around w-full">
+                    <div className="mt-6 flex lg:flex-row sm:flex-col justify-around w-full">
                         <figure className="bg-opacity-20 bg-cyan-200 p-4 m-4 rounded-[20px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer">
                             <h6 className="text-xl text-center">Affirmation Generator</h6>
                             <video className="rounded-[20px] border-gray-600 border-8 my-4 w-[270px] h-[150px]" src={affirmGen} controls aria-label="A project that generates affirmations"></video>
@@ -33,7 +33,7 @@ const Projects = () => {
                 </div>
                 <div className="mb-9">
                     <h3 className="text-2xl mt-[100px] text-center">Full Stack Projects</h3>
-                    <div className="flex justify-around mt-6">
+                    <div className="flex lg:flex-row sm:flex-col justify-around mt-6">
                         <figure className="bg-opacity-20 bg-cyan-200 p-4 m-4 rounded-[20px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer">
                         <h6 className="text-xl text-center">Book Lab</h6>
                             <video className="rounded-[20px] border-gray-600 border-8 my-4 w-[270px] h-[160px]" src={bookLab} controls aria-label="A project that has crud operations to view books"></video>

@@ -75,10 +75,10 @@ const Contact = () => {
     return(
         <div className="flex flex-col items-center italic mt-[94px] mb-[50px] text-center">
             <h3 className="text-3xl pt-[30px]">Contact Me</h3>
-            <h6 className="mt-[40px] mb-[18px] text-center text-2xl w-[500px]">Any Questions? Or have a web application in mind? Send me a message and I will get back to you soon. I strive to provide the best service to my clients when it comes to web applications. I Will be looking forward to hearing from you soon!</h6>
-            <div className="flex lg:flex-row sm:flex-col justify-around mt-[90px] w-full">
-                <form className="grid gap-2 w-full max-w-xs" onSubmit={handleSubmit}>
-                    <p className="w-[500px] mb-5">Use the form below to send me a message regarding services or Ideas. I will normally reply to all emails within 24 business hours. </p>
+            <h6 className="w-[175px] sm:w-[250px] md:w-[500px] lg:w-[380px] mt-[40px] mb-[18px] text-sm sm:text-l md:text-xl lg:text-xl text-center">Any Questions? Or have a web application in mind? Send me a message and I will get back to you soon. I strive to provide the best service to my clients when it comes to web applications. I Will be looking forward to hearing from you soon!</h6>
+            <div className="flex flex-col items-center sm:flex-col md:flex-col sm:items-center md:items-center lg:flex-row justify-around mt-[90px] w-full">
+                <form className="grid gap-2 w-full max-w-xs mb-6 sm:mb-4 md:mb-6" onSubmit={handleSubmit}>
+                    <p className="w-[175px] sm:w-[250px] md:w-[500px] mb-5">Use the form below to send me a message regarding services or Ideas. I will normally reply to all emails within 24 business hours. </p>
                     <input type="text" id="name" value={name} onChange={(e) => setName(e.target.value)} placeholder="Name" className="mb-2 h-9 p-2 dark:bg-gray-500 dark:text-black" required/>
                     <input type="text" id="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" className="mb-2 h-9 p-2 dark:bg-gray-500 dark:text-black" required/>
                     <input type="text" id="phone" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="Phone Number" className="mb-2 h-9 p-2  dark:bg-gray-500 dark:text-black" required/>

@@ -14,8 +14,8 @@ const Services = () => {
     return(
         <div className="mt-[100px]">
             <h1 className="pt-[50px] text-center text-[40px]">Services and Skills</h1>
-            <div className="flex justify-around align-middle mt-[100px] mb-[150px]">
-                <div className="w-[500px]">
+            <div className="flex lg:flex-row sm:flex-col sm:items-center justify-around align-middle mt-[100px] mb-[150px]">
+                <div className="w-[500px] sm:mb-6">
                     <h3 className="text-[30px] mb-[20px]">Services</h3>
                     <p className="text-[20px]">I deliver high-quality, functional products quickly and efficiently, ensuring both you and your users are delighted. My services include:</p>
                     <ul className="mt-[20px] ml-[50px] text-[20px]">
