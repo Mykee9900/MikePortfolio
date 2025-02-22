@@ -13,18 +13,18 @@ const Projects = () => {
             <div className="flex flex-col justify-around items-center">
                 <div>
                     <h3 className="text-2xl mt-[60px] text-center">Front End Projects</h3>
-                    <div className="mt-6 flex lg:flex-row sm:flex-col justify-around w-full">
-                        <figure className="bg-opacity-20 bg-cyan-200 p-4 m-4 rounded-[20px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer">
+                    <div className="overflow-x-auto mt-6 flex lg:flex-row sm:flex-col md:flex-row justify-around max-w-[100vw]">
+                        <figure className="min-w-[280px] bg-opacity-20 bg-cyan-200 p-4 m-4 rounded-[20px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer">
                             <h6 className="text-xl text-center">Affirmation Generator</h6>
                             <video className="rounded-[20px] border-gray-600 border-8 my-4 w-[270px] h-[150px]" src={affirmGen} controls aria-label="A project that generates affirmations"></video>
                             <figcaption className="text-center w-[270px]">An interactive website built using HTML, CSS, and JavaScript to generate personalized affirmations instantly.”</figcaption>
                         </figure>
-                        <figure className="bg-opacity-20 bg-cyan-200 p-4 m-4 rounded-[20px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer">
+                        <figure className="min-w-[280px] bg-opacity-20 bg-cyan-200 p-4 m-4 rounded-[20px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer">
                         <h6 className="text-xl text-center">Calculator</h6>
                             <video className="rounded-[20px] border-gray-600 border-8 my-4 w-[270px] h-[165px]" src={calculator} controls aria-label="A project that is a calculator"></video>
                             <figcaption className="text-center w-[270px]">A functional calculator website designed and developed using HTML, CSS, and JavaScript, providing users with an intuitive interface for performing basic arithmetic operations.</figcaption>
                         </figure>
-                        <figure className="bg-opacity-20 bg-cyan-200 p-4 m-4 rounded-[20px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer">
+                        <figure className="min-w-[280px] bg-opacity-20 bg-cyan-200 p-4 m-4 rounded-[20px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer">
                             <h6 className="text-xl text-center">ToDo List</h6>
                             <video className="rounded-[20px] border-gray-600 border-8 my-4 w-[270px] h-[161px]" src={toDo} controls aria-label="A project that is used as a ToDo List"></video>
                             <figcaption className="text-center w-[270px]">A dynamic and visually appealing To-Do List website built using the React front-end framework and styled with CSS, offering seamless task management and an intuitive user experience.</figcaption>
@@ -33,7 +33,7 @@ const Projects = () => {
                 </div>
                 <div className="mb-9">
                     <h3 className="text-2xl mt-[100px] text-center">Full Stack Projects</h3>
-                    <div className="flex lg:flex-row sm:flex-col justify-around mt-6">
+                    <div className="overflow-x-auto flex flex-row overflow-auto lg:flex-row sm:flex-col md:flex-row justify-around mt-6 max-w-[100vw]">
                         <figure className="bg-opacity-20 bg-cyan-200 p-4 m-4 rounded-[20px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer">
                         <h6 className="text-xl text-center">Book Lab</h6>
                             <video className="rounded-[20px] border-gray-600 border-8 my-4 w-[270px] h-[160px]" src={bookLab} controls aria-label="A project that has crud operations to view books"></video>
