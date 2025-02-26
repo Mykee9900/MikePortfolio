@@ -14,11 +14,11 @@ const Services = () => {
     return(
         <div className="mt-[100px]">
             <h1 className="pt-[50px] text-center text-[40px]">Services and Skills</h1>
-            <div className="flex justify-around align-middle mt-[100px] mb-[150px]">
-                <div className="w-[500px]">
-                    <h3 className="text-[30px] mb-[20px]">Services</h3>
-                    <p className="text-[20px]">I deliver high-quality, functional products quickly and efficiently, ensuring both you and your users are delighted. My services include:</p>
-                    <ul className="mt-[20px] ml-[50px] text-[20px]">
+            <div className="flex flex-col lg:flex-row sm:flex-col sm:items-center justify-around align-middle mt-[100px] mb-[150px]">
+                <div className="w-full max-w-screen px-4 sm:mb-6">
+                    <h3 className="text-[30px] mb-[20px] sm:text-[20px] md:text-[30px] lg:text-[40px]">Services</h3>
+                    <p className="text-[12px] w-[200px] sm:text-[12px] md:text-[15px] lg:text-[20px] sm:w-[250px] md:w-[300px]">I deliver high-quality, functional products quickly and efficiently, ensuring both you and your users are delighted. My services include:</p>
+                    <ul className="mt-[20px] ml-[50px] text-[20px] md:text-[15px] lg:text-[25px]">
                         <li className="font-bold list-disc">Product Design</li>
                         <li className="font-bold list-disc">Web and Mobile Application Development</li>
                         <li className="font-bold list-disc">Front-End Development</li>
@@ -26,10 +26,10 @@ const Services = () => {
                         <li className="font-bold list-disc">Full-Stack Development</li>
                     </ul>
                 </div>
-                <div className="w-[500px] h-[300px]">
-                    <h3 className="text-[30px] mb-[20px]">Skills</h3>
-                    <p className="text-[20px]">I have a wide variety of programming skills that allows me to build products that suit your needs. The programming tools I know are:</p>
-                    <ul className="flex justify-around mt-[30px] text-[20px]">
+                <div className="w-full max-w-screen px-4">
+                    <h3 className="text-[15px] mb-[20px] sm:text-[15px] md:text-[20px] lg:text-[40px]">Skills</h3>
+                    <p className="text-[12px] w-[200px] sm:text-[12px] md:text-[15px] lg:text-[20px] md:w-[300px]">I have a wide variety of programming skills that allows me to build products that suit your needs. The programming tools I know are:</p>
+                    <ul className="flex mt-[30px] text-[20px] md:text-[15px] lg:text-[25px]">
                         <ul className="font-bold">Languages:
                             <li><FontAwesomeIcon icon={faJs} beat style={{color: "#74C0FC",}} /> JavaScript</li>
                             <li><FontAwesomeIcon icon={faCss3} beat style={{color: "#74C0FC"}} /> CSS</li>
