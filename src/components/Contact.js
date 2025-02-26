@@ -12,18 +12,15 @@ const Contact = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log("In the function");
         // uses datavalidator boolean value to check if user input data is not malicious, if not continues on with POST method
         if(dataValidator()){
             try {
-                console.log("trying to send message");
                 const response = await fetch('/contact', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ name, email, phone, msg }),
                 });
                 if(response.ok){
-                    console.log("success")
                     alert("Message sent!");
                     setName('');
                     setEmail('');
@@ -31,7 +28,6 @@ const Contact = () => {
                     setMsg('');
                 } else {
                     alert("Failed to send!");
-                    console.log("failed");
                 }
             } catch(error){
                 console.log('Error:', error);

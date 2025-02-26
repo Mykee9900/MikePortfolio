@@ -10,7 +10,7 @@ const Home = () => {
     return (
         <div className="italic text-center font-medium500Italic mt-9">
             <div className="flex flex-col justify-center items-center w-full my-[100px]">
-                    <h3 className="sm:text-l md:text-2xl lg:text-4xl text-black-600 my-[70px]">Hello World! My name is Mykee. I create great software, from creative ideas. </h3>
+                <h3 className="sm:text-l md:text-2xl lg:text-4xl text-black-600 my-[70px]">Hello World! My name is Mykee. I create great software, from creative ideas. </h3>
                 <div className="w-2/4">
                     <p className="text-2xl my-4 self-center">Reach me here</p>
                     <div className="flex justify-center">
@@ -20,7 +20,8 @@ const Home = () => {
                         </a>
                         <a href="https://www.instagram.com/kikes9900/profilecard/?igsh=MWJpdmZhdG4zdDczMw%3D%3D" className="flex items-center sm:text-l md:text-xl text-blue-700 hover:text-blue-900 mx-[20px] transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300" target="_blank">
                             <FontAwesomeIcon icon={faInstagram} className="mr-2" />
-                            Instagram</a>
+                            Instagram
+                        </a>
                         <a href={`mailto:${process.env.REACT_APP_EMAIL_USER}`} className="flex items-center sm:text-l md:text-xl text-blue-700 hover:text-blue-900 mx-[20px] transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300" target="_blank">
                             <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
                             Email

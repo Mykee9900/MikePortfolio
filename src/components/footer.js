@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
-
     return(
         <div className="flex justify-around items-center w-full h-[50px] bg-gray-500">
             <p className="text-xs sm:text-base md:text-l">Made with ❤️ in TX 2022 Mykee Flores</p>
