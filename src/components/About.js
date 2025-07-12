@@ -1,12 +1,11 @@
 import React from "react";
-import aboutPhoto from "../media/aboutPhoto.jpg";
 
 const About = () => {
     return (
         <div className="mt-[100px]">
             <h1 className="pt-[50px] text-center text-[40px]">About Me</h1>
             <div className="flex flex-col items-center sm:flex-col md:flex-row lg:flex-row justify-around w-full my-[80px]">
-                <img className="h-[150px] sm:h-[250px] md:h-[350px] lg:h-[500px] border-8 border-gray-500 rounded-2xl " src={aboutPhoto} alt="Profile picture" />
+                <img className="h-[150px] sm:h-[250px] md:h-[350px] lg:h-[500px] border-8 border-gray-500 rounded-2xl " src="/media/aboutPhoto.jpg" alt="Profile picture" />
                 <div className="flex flex-col italic text-xl w-[200px] sm:-[250px] md:w-[400px]">
                     <h3 className="text-sm text-center pt-6 md:pt-4 sm:text-l md:text-xl lg:text-2xl  pb-4 md:pb-1 lg:pb-0">Hello! I'm Mykee.</h3>
                     <p className="text-sm text-center sm:text-l md:text-xl lg:text-xl">I am an Army veteran from El Paso who became a software developer.</p>
