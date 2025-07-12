@@ -1,6 +1,4 @@
 import React from "react";
-// import movieMake from "../media/MovieMaker.mp4";
-// import taskMan from "../media/TaskVid.mp4";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
