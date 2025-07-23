@@ -18,7 +18,7 @@ const Home = () => {
                             <FontAwesomeIcon icon={faLinkedin} className="mr-2" />
                             LinkedIn
                         </a>
-                        <a href="https://www.instagram.com/kikes9900/profilecard/?igsh=MWJpdmZhdG4zdDczMw%3D%3D" className="flex items-center sm:text-l md:text-xl text-blue-700 hover:text-blue-900 mx-[20px] transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300" target="_blank">
+                        <a href="https://www.instagram.com/pranamyk777/profilecard/?igsh=MWJpdmZhdG4zdDczMw%3D%3D" className="flex items-center sm:text-l md:text-xl text-blue-700 hover:text-blue-900 mx-[20px] transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300" target="_blank">
                             <FontAwesomeIcon icon={faInstagram} className="mr-2" />
                             Instagram
                         </a>
