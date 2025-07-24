@@ -15,7 +15,7 @@ const Contact = () => {
         // uses datavalidator boolean value to check if user input data is not malicious, if not continues on with POST method
         if(dataValidator()){
             try {
-                const response = await fetch('/contact', {
+                const response = await fetch(`${process.env.REACT_APP_API_URL}/contact`, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ name, email, phone, msg }),
